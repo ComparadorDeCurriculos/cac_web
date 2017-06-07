@@ -1,0 +1,7 @@
+{% for field in form.visible_fields %}
+{% include 'cac_app/render_field.html' with field=field %}
+{% endfor %}
+
+{% for field in form.hidden_fields %}
+{% include 'cac_app/render_field.html' with field=field hidden=True only %}
+{% endfor %}

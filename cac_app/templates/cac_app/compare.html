@@ -1,0 +1,42 @@
+{% extends 'cac_app/base.html' %}
+
+{% block content %}
+  <div class="page-header">
+    <h1 class="center">Comparador Automático de Currículos</h1>
+  </div>
+
+  <form method="post">
+    {% csrf_token %}
+    
+    <!-- Box os courses -->
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            {% include "cac_app/render_field.html" with field=form.inst1 type="inst" %}
+            {% include "cac_app/render_field.html" with field=form.curso1 type="curso" %}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            {% include "cac_app/render_field.html" with field=form.inst2 type="inst" %}
+            {% include "cac_app/render_field.html" with field=form.curso2 type="curso" %}
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end row-->
+
+    <!-- Button compare -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center">
+          <button type="submit" class="btn btn-primary">Comparar</button>
+        </div>
+      </div>  
+    </div>
+  </form>
+{% endblock %}

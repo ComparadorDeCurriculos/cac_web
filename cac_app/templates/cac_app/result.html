@@ -1,0 +1,171 @@
+{% extends 'cac_app/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- for two bars chart 
+<style>
+.axis .domain {
+  display: none;
+}
+</style>-->
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+
+<!-- 2bars -->
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<canvas id="groupedBars"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- radar -->
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<canvas id="radarChart"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 2bars -->
+<script>
+$(function() {
+	var data = {
+	  labels: {{2bars.labels|safe}},
+	  datasets: [
+	      {
+	          label: "Ciências da Computação",
+	    	  // area
+	          backgroundColor: "rgba(255, 177, 193, 0.5)",			  
+			  borderColor: "rgba(255, 0, 0, 0.5)",			  
+  	    	  borderWidth: 1,
+
+	          data: {{2bars.data1}}
+	      },
+	      {
+	          label: "Sistemas de Informação",
+	          // area
+	          backgroundColor: "rgba(151,187,205,0.5)",			  
+			  borderColor: "rgba(0,0,255,0.5)",
+  	    	  borderWidth: 1,
+	          
+	          data: {{2bars.data2}}
+	      }
+	]
+	};
+
+	var config = {
+		
+		type: 'bar',
+		
+		data: data,
+
+		options: {
+	    	responsive: true,
+
+	    	title: {
+	            display: true,
+	            text: 'Créditos-aula por Núcleo'
+	        },
+
+			scales: {
+				xAxes: [{
+				    display: true,
+				    scaleLabel: {
+				        display: true,
+				        labelString: 'Núcleos da SBC'
+				    }
+				}],
+				yAxes: [{
+				    display: true,
+				    scaleLabel: {
+				        display: true,
+				        labelString: 'Número de créditos'
+				    }
+				}]
+			}	        	
+	    }
+	};
+
+	// Get the context of the canvas element we want to select
+	var ctx = document.getElementById("groupedBars").getContext('2d');
+	var myBarChart = new Chart(ctx, config);
+});
+
+</script>
+
+<script>
+$(function() {
+	var data = {
+	  labels: {{2bars.labels|safe}},
+	  datasets: [
+	      {
+	          label: "Ciências da Computação",
+	          // area
+	          backgroundColor: "rgba(255, 177, 193, 0.5)",			  
+			  borderColor: "rgba(255, 0, 0, 0.5)",			  
+  	    	  borderWidth: 1,
+			  
+  	    	  // point
+  	    	  pointBackgroundColor: "rgba(255, 177, 193,1)",
+			  pointBorderColor: "rgba(255, 0, 0, 0.5)",
+  			  pointHoverBackgroundColor: "rgba(255, 177, 193,0.8)",
+			  pointHoverBorderColor: "rgba(255, 0, 0, 0.5)",
+
+	    	  data: {{2bars.data1}}
+	      },
+	      {
+	          label: "Sistemas de Informação",
+	          // area
+	          backgroundColor: "rgba(151,187,205,0.5)",			  
+			  borderColor: "rgba(0,0,255,0.5)",
+  	    	  borderWidth: 1,
+			  
+  	    	  // point
+  	    	  pointBackgroundColor: "rgba(151,187,205,1)",
+			  pointBorderColor: "rgba(0,0,255,0.5)",
+  			  pointHoverBackgroundColor: "rgba(151,187,205,0.8)",
+			  pointHoverBorderColor: "rgba(0,0,255,0.5)",
+
+	          data: {{2bars.data2}}
+	      }
+	]
+	};
+
+	var config = {
+		
+		type: 'radar',
+		
+		data: data,
+
+		options: {
+	    	responsive: true,
+
+	    	title: {
+	            display: true,
+	            text: 'Créditos-aula por Núcleo'
+	        }	        	
+	    }
+	};
+
+	// Get the context of the canvas element we want to select
+	var ctx = document.getElementById("radarChart").getContext('2d');
+	var myRadarChart = new Chart(ctx, config);
+});
+
+</script>
+
+{% endblock %}

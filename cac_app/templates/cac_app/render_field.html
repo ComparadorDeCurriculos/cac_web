@@ -1,0 +1,34 @@
+{% comment %}
+	Use as:
+	{% include 'renders/render_field.html' with field=field_name only %}
+	or
+	{% include 'renders/render_field.html' with class='s12 m8 l6' only %}
+	
+	Arguments:
+	[field] required    -> field object
+	[put_row] optional  -> If the field will be wrapped by a <div class="row">...</div>
+	[open_row] optional -> If the field will be preceded by a <div class="row">
+	[open_row] optional -> If the field will be succeeded by a </div>
+	[class] optional    -> Custom classes to add on the div around the input. 'input-field col' will always be added.
+{% endcomment %}
+
+{% load cac_tags %}
+
+{% if hidden %}
+	{{ field }}
+{% else %}
+
+	{% if put_row|default_if_none:False or open_row %}<div class="row">{% endif %}
+	<div class="form-group {% if class %}{{class}}{% else %}col-xs-12{% endif %} {% if field.errors %}has-error{% endif %}">
+		{{ field.choice}}
+
+		{{ field.label_tag }}
+		{{ field|addcss:"form-control" }}
+
+
+		{% if field.help_text %} <span class="help-block">{{ field.help_text|safe }}</span> {% endif %}
+		{% if field.errors %}<div class="alert alert-danger">{% for e in field.errors %}<span>{{e}}</span>{% endfor %}</div>{% endif %}
+	</div>
+	{% if put_row|default_if_none:False or close_row %}</div>{% endif %}
+
+{% endif %}
