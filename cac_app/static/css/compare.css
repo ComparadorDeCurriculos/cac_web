@@ -48,3 +48,42 @@ code {
 .container .jumbotron {
   padding: 30px 30px 30px 30px;
 }
+
+.mynavbar {
+  background-color: #062249;
+}
+
+#navbar > ul > li > a {
+  color: #e5e8ec;
+}
+
+#navbar > ul > li.active > a{
+  color: #FFFFFF;
+  background-color: #051A38;
+}
+
+#navbar > ul > li > a:hover, #navbar > ul > li > a:focus {
+  color: #FFFFFF;
+  background-color: #051A38;
+}
+
+#navbar > a > img {
+  position: relative;
+  padding: 10px 36px 18px 36px;
+  height: 112px;
+}
+
+#navbar > ul {
+  position: relative;
+  padding-top: 33px;
+}
+
+body {
+    padding-top: 66px; /* Whatever the height of your navbar is; the
+                             default is 50px */
+}
+
+.footer {
+  background-color: #062249;
+  color: #FFFFFF;
+}

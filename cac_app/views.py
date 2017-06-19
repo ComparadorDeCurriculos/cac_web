@@ -2,6 +2,13 @@ from django.shortcuts import render, render_to_response, redirect
 from .forms import CompForm
 from .src.plotting import *
 
+
+def contactus(request):
+	return render(request, 'cac_app/contactus.html');
+
+def about(request):
+	return render(request, 'cac_app/about.html');
+
 def compare(request):
 	if request.method == "POST":
 		form = CompForm(request.POST)
