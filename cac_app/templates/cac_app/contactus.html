@@ -1,7 +1,64 @@
 {% extends 'cac_app/base.html' %}
 
+{% load staticfiles %}
+
 {% block content %}
-  <div class="page-header">
-    <h1 class="center">Fale conosco</h1>
-  </div>
+
+<div class="page-header">
+    <h1 class="center">Contato</h1>
+</div>
+    <body class="text-center">
+    	<p>
+    		Entre em contato conosco por um dos e-mails abaixo:
+    	</p>
+    </body>
+
+	<div class="row">
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail center">
+		    <a href="https://www.facebook.com/brasteiro">
+		      <img class= "about-thumb" src="{% static 'img/bruno.jpg' %}" alt="bruno"  style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Bruno Rasteiro</h4>
+		        <a href="bruno.rasteiro@usp.br">bruno.rasteiro@usp.br</a>
+		      </div>
+	  	</a>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail center">
+		    <a href="https://www.facebook.com/rafaelmonteiro95">
+		      <img class= "about-thumb" src="{% static 'img/rafael.jpg' %}" alt="rafael" style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Rafael Monteiro</h4>
+		        <a href="rafael.augusto.monteiro@usp.br">rafael.augusto.monteiro@usp.br</a>
+		      </div>
+	  	</a>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail center">
+		    <a href="http://conteudo.icmc.usp.br/pessoas/taspardo/">
+		      <img class= "about-thumb" src="{% static 'img/thiago.jpg' %}" alt="thiago"
+		      style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Thiago A. S. Pardo</h4>
+		        <a href="taspardo@icmc.usp.br">taspardo@icmc.usp.br</a>
+		      </div>
+	  	</a>
+	    </div>
+	  </div>
+	</div>
 {% endblock %}
