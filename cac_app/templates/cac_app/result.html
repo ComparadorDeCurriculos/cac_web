@@ -2,6 +2,7 @@
 
 {% block content %}
 {% load static %}
+{% load staticfiles %}
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
@@ -9,6 +10,29 @@
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
 
+
+
+<!-- barsCourse1 -->
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<canvas id="barsCourse1"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- barsCourse2 -->
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<canvas id="barsCourse2"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- groupedBars -->
 <div class="row">
@@ -32,6 +56,12 @@
 	</div>
 </div>
 
+<!-- Venn -->
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<img src="{{pathVenn|safe}}" class="img-thumbnail" alt="Diagrama de Venn" width="800" height="600">
+	</div>
+</div>
 
 <!-- groupedBars -->
 <script>
@@ -68,7 +98,8 @@ $(function() {
 	]
 	};
 
-	var config = {
+
+	var configGroupedBars = {
 		
 		type: 'bar',
 		
@@ -101,13 +132,31 @@ $(function() {
 	    }
 	};
 
+	var configBarsCourse1 = Object.assign({}, configGroupedBars); 
+	configBarsCourse1['data'] = Object.assign({}, configGroupedBars['data']);
+	configBarsCourse1['data']['datasets'] = Object.assign([], configGroupedBars['data']['datasets']);
+	configBarsCourse1['data']['datasets'] = configBarsCourse1['data']['datasets'].slice(0, 1);	
+
+	var configBarsCourse2 = Object.assign({}, configGroupedBars); 
+	configBarsCourse2['data'] = Object.assign({}, configGroupedBars['data']);
+	configBarsCourse2['data']['datasets'] = Object.assign([], configGroupedBars['data']['datasets']);
+	configBarsCourse2['data']['datasets'] = configBarsCourse2['data']['datasets'].slice(1, 2);	
+
+
 	// Get the context of the canvas element we want to select
-	var ctx = document.getElementById("groupedBars").getContext('2d');
-	var myBarChart = new Chart(ctx, config);
+	var ctx1 = document.getElementById("barsCourse1").getContext('2d');
+	var myBarChart1 = new Chart(ctx1, configBarsCourse1);
+
+	var ctx2 = document.getElementById("barsCourse2").getContext('2d');
+	var myBarChart2 = new Chart(ctx2, configBarsCourse2);
+
+	var ctx3 = document.getElementById("groupedBars").getContext('2d');
+	var myBarChart3 = new Chart(ctx3, configGroupedBars);
 });
 
 </script>
 
+<!-- radarChart -->
 <script>
 $(function() {
 	var data = {
@@ -175,5 +224,7 @@ $(function() {
 	var myRadarChart = new Chart(ctx, config);
 });
 </script>
+
+
 
 {% endblock %}
