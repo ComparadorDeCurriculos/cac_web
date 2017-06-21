@@ -1,7 +1,119 @@
 {% extends 'cac_app/base.html' %}
 
+{% load staticfiles %}
+
 {% block content %}
+	
+	<div class="page-header">
+    <h1 class="center">Saiba Mais</h1>
+  </div>
+
+
   <div class="page-header">
-    <h1 class="center">Sobre nós</h1>
+    <h3 class="center">Sobre o projeto</h3>
+    <body class="text-justify">
+    	<p>
+    		Este sistema faz parte de um projeto de cultura e extensão e iniciação científica do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo (ICMC-USP). A proposta é criar um sistema que compare automaticamente currículos de cursos oferecidos por diferentes instituições de ensino superior, gerando visualizações que sejam simples, que evidenciem as diferenças e semelhanças entre os cursos e que auxiliem um vestibulando na escolha do curso que mais o agrade.
+    	</p>
+    	<p>
+    		Para desenvolver o sistema, utilizamos técnicas de inteligência artificial, mais especificamente da área de processamento de linguagem natural. Com essas técnicas podemos avaliar a similaridade entre as disciplinas das grades curriculares de cursos oferecidos em diferentes instituições de ensino superior, e gerar as visualizações buscadas.
+    	</p>
+    	<p>
+    		Para desenvolver o sistema, utilizamos técnicas de inteligência artificial, mais especificamente da área de processamento de linguagem natural. Com essas técnicas podemos avaliar a similaridade entre as disciplinas das grades curriculares de cursos oferecidos em diferentes instituições de ensino superior, e gerar as visualizações buscadas.
+    	</p>
+
+    	<p>
+    		Um artigo sobre o projeto foi submetido ao V Workshop de Iniciação Científica em Tecnologia da Informação e da Linguagem Humana (TILic 2017). Confira o artigo <a href="
+    	https://drive.google.com/open?id=0B4oklGRgv74TbzN3ZHJKc1BNWHc">aqui</a>.
+    	</p>
+    </body>
+  </div>
+
+  <div class="page-header">
+    <h3 class="center">Sobre nós</h3>
+  </div>
+
+  <div class="row">
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+		    <a href="https://www.facebook.com/brasteiro">
+		      <img class= "about-thumb" src="{% static 'img/bruno.jpg' %}" alt="bruno"  style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Bruno Rasteiro</h4>
+		        <p>
+		        	Atualmente cursando Ciências de Computação no ICMC-USP, desenvolvi este sistema como um projeto de iniciação científica orientado pelo Prof. Thiago Pardo. Tenho um cabelão e não sei mais o que dizer. 
+		        </p>
+		      </div>
+      	</a>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+		    <a href="https://www.facebook.com/rafaelmonteiro95">
+		      <img class= "about-thumb" src="{% static 'img/rafael.jpg' %}" alt="rafael" style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Rafael Monteiro</h4>
+		        <p>
+		        	Atualmente cursando Ciências de Computação no ICMC-USP, desenvolvi este sistema como um projeto de iniciação científica orientado pelo Prof. Thiago Pardo. Já fui monitor e ministrei aulas de programação básica para alunos do ensino médio no programa Codifique, e para alunos da graduação no programa PET Challenge.
+		        </p>
+		      </div>
+      	</a>
+	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+		    <a href="http://conteudo.icmc.usp.br/pessoas/taspardo/">
+		      <img class= "about-thumb" src="{% static 'img/thiago.jpg' %}" alt="thiago"
+		      style="
+		      				max-width: 300px;
+		      				max-height: 300px;
+							    clip: rect(0px,300px,300px,0px);
+							    padding: 15px 15px 15px 15px">
+		      <div class="caption">
+		        <h4>Thiago A. S. Pardo</h4>
+		        <p>
+		        	Orientador deste projeto, sou professor associado do ICMC-USP, e tenho experiência na área de Inteligência Artificial, atuando principalmente nos seguintes temas: processamento de linguagem natural, ou linguística computacional, mais especificamente nas áreas de sumarização automática de textos e análise discursiva.
+		        </p>
+		      </div>
+      	</a>
+	    </div>
+	  </div>
+	</div>
+
+  <div class="page-header">
+    <h3 class="center">Agradecimentos</h3>
+    <body>
+    	<p>
+    		Agradecemos à <a href="http://prceu.usp.br/">Pró-reitoria de Cultura e Extensão Universitária da Universidade de São Paulo (PRCEU-USP)</a> pelo financiamento do projeto através do Programa Unificado de Bolsas da Universidade de São Paulo. Sem o amparo fornecido pela USP este projeto não seria possível.
+    	</p>
+    	<p>
+    		Também agradecemos ao <a href="http://icmc.usp.br/">Instituto de Ciências Matemáticas da Universidade de São Paulo</a> pelo apoio dado. Este projeto foi desenvolvido com o uso da infraestrutura do ICMC-USP e com o auxílio de professores e funcionários.
+    	</p>
+    	<p>
+    		Por fim, gostariamos de agradecer ao professor Thiago Pardo pela orientação do projeto. Graças à sua participação ativa, este projeto pode ser idealizado e desenvolvido.
+    	</p>
+    </body>
+    <div class="row center">
+    		<a href="http://prceu.usp.br/">
+    			<img src="{% static 'img/marca_assinatura_PRCEU_azul_sfundo.png' %}" style="
+    			max-width: 200px;
+    			max-height: 200px;
+    			">
+    		</a>
+    		<a href="http://icmc.usp.br/">
+    			<img src="{% static 'img/logoICMC.PNG' %}" style="
+    			max-width: 200px;
+    			max-height: 200px;
+    			">
+    		</a>
+    </div>
   </div>
 {% endblock %}

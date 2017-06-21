@@ -54,7 +54,7 @@
 
           <ul class="nav navbar-nav" style="vertical-align: center">
             <li {% if request.path == "/" %} class="active"{% elif 'result' in request.path %} class="active"{% endif %}><a href='{% url "compare" %}'>Comparador</a></li>
-            <li {% if 'about' in request.path %} class="active"{% endif %}><a href='{% url "about" %}'>Sobre nós</a></li>
+            <li {% if 'about' in request.path %} class="active"{% endif %}><a href='{% url "about" %}'>Saiba Mais</a></li>
             <li {% if 'contactus' in request.path %} class="active"{% endif %}><a href='{% url "contactus" %}'>Contato</a></li>
           </ul>
 
