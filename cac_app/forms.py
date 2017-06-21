@@ -5,7 +5,10 @@ class CompForm(forms.Form):
 	INSTITUTIONS = (
 		('icmc', 'USP - Intituto de Ciências Matemáticas e de Computação'),
 		('ime', 'USP - Instituto de Matemática e Estátistica'),
-		('ufrgs', 'UFRGS - Universidade Federal do Rio Grande do Sul')
+		('ufrgs', 'UFRGS - Universidade Federal do Rio Grande do Sul'),
+		('ufpe', 'UFPE - Universidade Federal de Pernambuco'),
+		('sbc', 'SBC - Currículo de Referência')
+			
     )
 
 	COURSES = (

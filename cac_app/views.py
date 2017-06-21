@@ -33,8 +33,10 @@ def result(request, i1, c1, i2, c2):
 	c2 = c2.upper()
 
 	path = 'cac_app/static/comparison/credAulaNuc-'+i1+'_'+c1+'-'+i2+'_'+c2+'.csv'
+	pathVenn = '/static/comparison/venn-'+i1+'_'+c1+'-'+i2+'_'+c2+'.png'
 	if (not os.path.isfile(path)):
-		path = 'cac_app/static/comparison/credAulaNuc-'+i2+'_'+c2+'-'+i1+'_'+c1+'.csv'		
+		path = 'cac_app/static/comparison/credAulaNuc-'+i2+'_'+c2+'-'+i1+'_'+c1+'.csv'
+		pathVenn = '/static/comparison/venn-'+i2+'_'+c2+'-'+i1+'_'+c1+'.png'
 
 	with open(path, newline='') as csvfile:
 		spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
@@ -79,4 +81,4 @@ def result(request, i1, c1, i2, c2):
 	  }
 	}
 
-	return render(request, 'cac_app/result.html', {'credAulaNuc': chartDic["credAulaNuc"]})
+	return render(request, 'cac_app/result.html', {'credAulaNuc': chartDic["credAulaNuc"], 'pathVenn' : pathVenn})
