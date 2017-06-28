@@ -4,6 +4,8 @@
   <div class="page-header">
     <h1 class="center">Comparador Automático de Currículos</h1>
   </div>
+  
+  
 
   <form method="post">
     {% csrf_token %}
@@ -13,8 +15,8 @@
       <div class="col-md-5 col-md-offset-1">
         <div class="panel panel-default">
           <div class="panel-body">
-            {% include "cac_app/render_field.html" with field=form.inst1 type="inst" %}
-            {% include "cac_app/render_field.html" with field=form.curso1 type="curso" %}
+            {% include "cac_app/render_field.html" with field=form.inst1 type="inst" class="col-xs-11" %}
+            {% include "cac_app/render_field.html" with field=form.curso1 %}
           </div>
         </div>
       </div>
@@ -22,8 +24,8 @@
       <div class="col-md-5">
         <div class="panel panel-default">
           <div class="panel-body">
-            {% include "cac_app/render_field.html" with field=form.inst2 type="inst" %}
-            {% include "cac_app/render_field.html" with field=form.curso2 type="curso" %}
+            {% include "cac_app/render_field.html" with field=form.inst2 type="inst" class="col-xs-11"%}
+            {% include "cac_app/render_field.html" with field=form.curso2 %}
           </div>
         </div>
       </div>
@@ -39,4 +41,42 @@
       </div>  
     </div>
   </form>
+
+<script>
+
+</script>
+
+<script>
+//Executa a função change_link sempre que a página é carregada
+document.addEventListener('DOMContentLoaded', change_link(), false);
+
+function change_link(){
+  var i1 = document.getElementsByName("inst1")[0].value;
+  var c1 = document.getElementsByName("curso1")[0].value;
+  var i2 = document.getElementsByName("inst2")[0].value;
+  var c2 = document.getElementsByName("curso2")[0].value;
+  var link1 = document.getElementsByName('grade')[0];
+  var link2 = document.getElementsByName('grade')[1];
+  
+  var links = {
+    'bcc' : {
+      'icmc'  : 'https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=55&codcur=55041&codhab=0&tipo=N',
+      'ime'   : 'https://www.ime.usp.br/dcc/grad/grade',
+      'ufrgs' : 'http://www.ufrgs.br/ufrgs/ensino/graduacao/cursos/exibeCurso?cod_curso=305',
+      'ufpe'  : 'https://www.ufpe.br/ciencias-da-computacao-bacharelado-cin',
+      'sbc'   : 'http://www.sbc.org.br/documentos-da-sbc/send/131-curriculos-de-referencia/760-curriculo-de-referencia-cc-ec-versao2005'
+    },
+    'bsi' : {
+      'icmc'  : 'https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=55&codcur=55051&codhab=4&tipo=N'
+    },
+    'eng' : {
+      'icmc'  : 'https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=97&codcur=97001&codhab=0&tipo=N'
+    }
+  };
+  
+  link1.setAttribute("href", links[c1][i1]);
+  link2.setAttribute("href", links[c2][i2]);
+};
+</script>
+
 {% endblock %}

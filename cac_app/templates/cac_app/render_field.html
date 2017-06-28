@@ -20,15 +20,16 @@
 
 	{% if put_row|default_if_none:False or open_row %}<div class="row">{% endif %}
 	<div class="form-group {% if class %}{{class}}{% else %}col-xs-12{% endif %} {% if field.errors %}has-error{% endif %}">
-		{{ field.choice}}
+		{{ field.choice }}
 
 		{{ field.label_tag }}
-		{{ field|addcss:"form-control" }}
-
+		{{ field|addcss:"form-control" }}	
 
 		{% if field.help_text %} <span class="help-block">{{ field.help_text|safe }}</span> {% endif %}
 		{% if field.errors %}<div class="alert alert-danger">{% for e in field.errors %}<span>{{e}}</span>{% endfor %}</div>{% endif %}
 	</div>
+	{% if type == "inst" %}<a name="grade" href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><!--<span class="glyphicon glyphicon-link" aria-hidden="true" name="grade"></span>-->{% endif %}
+
 	{% if put_row|default_if_none:False or close_row %}</div>{% endif %}
 
 {% endif %}
