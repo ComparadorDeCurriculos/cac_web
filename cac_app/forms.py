@@ -7,7 +7,11 @@ class CompForm(forms.Form):
 				('icmc',  'USP - Instituto de Ciências Matemáticas e de Computação'),
 				('ime',   'USP - Instituto de Matemática e Estátistica'),
 				('ufrgs', 'UFRGS - Universidade Federal do Rio Grande do Sul'),
-				('ufpe',  'UFPE - Universidade Federal de Pernambuco')
+				('ufpe',  'UFPE - Universidade Federal de Pernambuco'),
+				('ufpr',  'UFPR - Universidade Federal do Paraná'),
+				('unb',   'UnB - Universidade de Brasília'),
+				('puc-rio', 'PUC RIO - Pontifícia Universidade Católica do Rio de Janeiro')
+
 			)
 		),
 		('Referência', (

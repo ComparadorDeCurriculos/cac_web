@@ -81,4 +81,10 @@ def result(request, i1, c1, i2, c2):
 	  }
 	}
 
+	path = path.replace("credAulaNuc", "disciplinas")
+	with open(path, newline='') as csvfile:
+		spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+		for row in spamreader:
+			csv2chart.append(row)
+
 	return render(request, 'cac_app/result.html', {'credAulaNuc': chartDic["credAulaNuc"], 'pathVenn' : pathVenn})
