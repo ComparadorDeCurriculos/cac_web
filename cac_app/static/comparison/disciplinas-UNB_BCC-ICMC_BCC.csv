@@ -1,3 +1,25 @@
-Organização de Arquivos,Algebra 1,Lógica Computacional 1,SOFTWARE BASICO,Computação Experimental,INFORMATICA E SOCIEDADE,Trabalho de Graduação 1,Trabalho de Graduação 2,BANCOS DE DADOS,CALCULO NUMERICO,Compiladores,Metodologia Científica,Redes de Computadores,Segurança Computacional,Tecnicas de Programação 1,Tecnicas de Programação 2
-Prática em Lógica Digital,Introdução à Lógica Digital,Eletrônica para Computação,Introdução à Ciência de Computação II,Sistemas Digitais,Organização de Arquivos,Programação Orientada a Objetos,Algoritmos Avançados e Aplicações,Sistemas Operacionais I,Geometria Analítica,Cálculo II,Cálculo III,Informação Profissional em Ciências da Computação,Evolução Histórica da Computação e Aplicações,Computadores e Sociedade I,Projeto Supervisionado I,Projeto Supervisionado II,Física Básica I,Laboratório de Física Geral I,Organização de Computadores Digitais I,Computação Gráfica,Cálculo Numérico,Processos Estocásticos,Redes de Computadores,Introdução ao Desenvolvimento Web
-Autômatos e Computabilidade,ESTRUTURAS DE DADOS,Fundamentos de Sistemas Operacionais,Introdução aos Sistemas Computacionais,LINGUAGENS DE PROGRAMACAO,ORGANIZACAO E ARQUITETURA DE COMPUTADORES,Projeto e Análise de Algoritmos,SISTEMAS DE INFORMACAO,Teoria e Aplicação de Grafos,Cálculo 1,Cálculo 2,Fundamentos Teóricos da Computação,INTRODUCAO A ALGEBRA LINEAR,Probabilidade e Estatística,Algoritmos e Programação de Computadores,CIRCUITOS DIGITAIS,ENGENHARIA DE SOFTWARE,INTRODUCAO A INTELIGENCIA ARTIFICIAL,INTRODUCAO A INTELIGENCIA ARTIFICIAL,Programação Concorrente
+Organização de Arquivos,Autômatos e Computabilidade,Prática em Lógica Digital
+BANCOS DE DADOS,ESTRUTURAS DE DADOS,Introdução à Lógica Digital
+CALCULO NUMERICO,Fundamentos de Sistemas Operacionais,Eletrônica para Computação
+Compiladores,Introdução aos Sistemas Computacionais,Introdução à Ciência de Computação II
+Metodologia Científica,LINGUAGENS DE PROGRAMACAO,Sistemas Digitais
+Redes de Computadores,ORGANIZACAO E ARQUITETURA DE COMPUTADORES,Organização de Arquivos
+Segurança Computacional,Projeto e Análise de Algoritmos,Programação Orientada a Objetos
+Tecnicas de Programação 1,SISTEMAS DE INFORMACAO,Algoritmos Avançados e Aplicações
+Tecnicas de Programação 2,Teoria e Aplicação de Grafos,Sistemas Operacionais I
+Computação Experimental,Algoritmos e Programação de Computadores,Organização de Computadores Digitais I
+INFORMATICA E SOCIEDADE,CIRCUITOS DIGITAIS,Computação Gráfica
+Trabalho de Graduação 1,ENGENHARIA DE SOFTWARE,Cálculo Numérico
+Trabalho de Graduação 2,INTRODUCAO A INTELIGENCIA ARTIFICIAL,Processos Estocásticos
+Algebra 1,INTRODUCAO A INTELIGENCIA ARTIFICIAL,Redes de Computadores
+Lógica Computacional 1,Programação Concorrente,Introdução ao Desenvolvimento Web
+SOFTWARE BASICO,Cálculo 1,Física Básica I
+ ,Cálculo 2,Laboratório de Física Geral I
+ ,Fundamentos Teóricos da Computação,Informação Profissional em Ciências da Computação
+ ,INTRODUCAO A ALGEBRA LINEAR,Evolução Histórica da Computação e Aplicações
+ ,Probabilidade e Estatística,Computadores e Sociedade I
+ , ,Projeto Supervisionado I
+ , ,Projeto Supervisionado II
+ , ,Geometria Analítica
+ , ,Cálculo II
+ , ,Cálculo III
