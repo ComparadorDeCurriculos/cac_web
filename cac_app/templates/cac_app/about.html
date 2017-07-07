@@ -36,47 +36,30 @@
   <div class="row">
 	  <div class="col-sm-6 col-md-4">
 	    <div class="thumbnail">
-		    <a href="https://www.facebook.com/brasteiro">
-		      <img class= "about-thumb" src="{% static 'img/bruno.jpg' %}" alt="bruno"  style="
-		      				max-width: 300px;
-		      				max-height: 300px;
-							    clip: rect(0px,300px,300px,0px);
-							    padding: 15px 15px 15px 15px">
+		      <img class= "about-thumb img-responsive " src="{% static 'img/bruno.jpg' %}" alt="bruno">
 		      <div class="caption">
 		        <h4>Bruno Rasteiro</h4>
 		        <p>
 		        	Atualmente cursando Ciências de Computação no ICMC-USP, desenvolvi este sistema como um projeto de iniciação científica orientado pelo Prof. Thiago Pardo. Tenho um cabelão e não sei mais o que dizer. 
 		        </p>
 		      </div>
-      	</a>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 col-md-4">
 	    <div class="thumbnail">
-		    <a href="https://www.facebook.com/rafaelmonteiro95">
-		      <img class= "about-thumb" src="{% static 'img/rafael.jpg' %}" alt="rafael" style="
-		      				max-width: 300px;
-		      				max-height: 300px;
-							    clip: rect(0px,300px,300px,0px);
-							    padding: 15px 15px 15px 15px">
+		      <img class= "about-thumb img-responsive " src="{% static 'img/rafael.jpg' %}" alt="rafael">
 		      <div class="caption">
 		        <h4>Rafael Monteiro</h4>
 		        <p>
 		        	Atualmente cursando Ciências de Computação no ICMC-USP, desenvolvi este sistema como um projeto de iniciação científica orientado pelo Prof. Thiago Pardo. Já fui monitor e ministrei aulas de programação básica para alunos do ensino médio no programa Codifique, e para alunos da graduação no programa PET Challenge.
 		        </p>
 		      </div>
-      	</a>
 	    </div>
 	  </div>
 	  <div class="col-sm-6 col-md-4">
 	    <div class="thumbnail">
-		    <a href="http://conteudo.icmc.usp.br/pessoas/taspardo/">
-		      <img class= "about-thumb" src="{% static 'img/thiago.jpg' %}" alt="thiago"
-		      style="
-		      				max-width: 300px;
-		      				max-height: 300px;
-							    clip: rect(0px,300px,300px,0px);
-							    padding: 15px 15px 15px 15px">
+		    <a href="http://conteudo.icmc.usp.br/pessoas/taspardo/" target="_blank">
+		      <img class= "about-thumb img-responsive " src="{% static 'img/thiago.jpg' %}" alt="thiago">
 		      <div class="caption">
 		        <h4>Thiago A. S. Pardo</h4>
 		        <p>
@@ -92,28 +75,52 @@
     <h3 class="center">Agradecimentos</h3>
     <body>
     	<p>
-    		Agradecemos à <a href="http://prceu.usp.br/">Pró-reitoria de Cultura e Extensão Universitária da Universidade de São Paulo (PRCEU-USP)</a> pelo financiamento do projeto através do Programa Unificado de Bolsas da Universidade de São Paulo. Sem o amparo fornecido pela USP este projeto não seria possível.
+    		Agradecemos à <a href="http://prceu.usp.br/" target="_blank">Pró-reitoria de Cultura e Extensão Universitária da Universidade de São Paulo (PRCEU-USP)</a> pelo financiamento do projeto através do Programa Unificado de Bolsas da Universidade de São Paulo. Sem o amparo fornecido pela USP este projeto não seria possível.
     	</p>
     	<p>
-    		Também agradecemos ao <a href="http://icmc.usp.br/">Instituto de Ciências Matemáticas da Universidade de São Paulo</a> pelo apoio dado. Este projeto foi desenvolvido com o uso da infraestrutura do ICMC-USP e com o auxílio de professores e funcionários.
+    		Agradecemos ao <a href="http://icmc.usp.br/" target="_blank">Instituto de Ciências Matemáticas da Universidade de São Paulo</a> pelo apoio dado. Este projeto foi desenvolvido com o uso da infraestrutura do ICMC-USP e com o auxílio de professores e funcionários.
     	</p>
+        <p>
+            Agradecemos ao <a href="http://nilc.icmc.usp.br/" target="_blank">NILC - Núcleo Interinstitucional de Linguística Computacional</a> pelo apoio dado. O grupo nos auxiliou na tomada de decisões em relação às ferramentas utilizadas e no aprendizado sobre PLN.
+        </p>
     	<p>
     		Por fim, gostariamos de agradecer ao professor Thiago Pardo pela orientação do projeto. Graças à sua participação ativa, este projeto pode ser idealizado e desenvolvido.
     	</p>
     </body>
-    <div class="row center">
-    		<a href="http://prceu.usp.br/">
-    			<img src="{% static 'img/marca_assinatura_PRCEU_azul_sfundo.png' %}" style="
-    			max-width: 200px;
-    			max-height: 200px;
-    			">
-    		</a>
-    		<a href="http://icmc.usp.br/">
-    			<img src="{% static 'img/logoICMC.PNG' %}" style="
-    			max-width: 200px;
-    			max-height: 200px;
-    			">
-    		</a>
+
+    <div class="container">
+        <div class="row center-block">
+            <!-- soh pra alinhar -->
+            <div class="col-xs-1"></div>
+            <!-- coluna centralizada -->
+            <div class="col-xs-10 center-block">
+                <!-- tres imagens. pra usar mais/menos imagens, altere o numero depois do 'xs' ateh preencher 12 na linha -->
+                <div class="row">
+                
+                    <div class="col-xs-4">
+                        <a href="http://nilc.icmc.usp.br/" target="_blank" class="thumb-img">
+                             <img src="{% static 'img/nilc.png' %}" class="img-responsive">
+                        </a>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <a href="http://prceu.usp.br/" target="_blank" class="thumb-img">
+                             <img src="{% static 'img/marca_assinatura_PRCEU_azul_sfundo.png' %}" class="img-responsive">
+                        </a>
+                    </div>
+
+                     <div class="col-xs-4">
+                        <a href="http://icmc.usp.br/" target="_blank" class="thumb-img">
+                             <img src="{% static 'img/logoICMC.PNG' %}" class="img-responsive">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- soh pra alinhar -->
+            <div class="col-xs-1"></div>
+        </div>
     </div>
   </div>
 {% endblock %}

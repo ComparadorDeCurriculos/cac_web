@@ -4,10 +4,7 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -23,8 +20,9 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 0px 0px 60px;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
@@ -78,12 +76,18 @@ code {
   padding-top: 33px;
 }
 
-body {
-    padding-top: 66px; /* Whatever the height of your navbar is; the
-                             default is 50px */
-}
-
 .footer {
   background-color: #062249;
   color: #FFFFFF;
+}
+
+.img-responsive {
+  max-width: 300px;
+  max-height: 300px;
+  clip: rect(0px,300px,300px,0px);
+  padding: 15px 15px 15px 15px;
+}
+
+.col-centered{
+    margin: 0 auto;
 }

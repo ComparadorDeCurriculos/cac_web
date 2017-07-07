@@ -35,37 +35,7 @@
 
   <body>
     <!-- Fixed navbar -->
-    <nav class="mynavbar navbar navbar-default navbar-fixed-top">
-      <div class="container" style="padding: 0px 66px 0px 66px">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div id="navbar" class="collapse navbar-collapse">
-
-          <a href="{% url 'compare' %}" class="brand-logo visible-xl pull-left">
-            <img alt="logoICMC" src="{% static 'img/cac.png' %}">
-          </a>
-
-          <ul class="nav navbar-nav" style="vertical-align: center">
-            <li {% if request.path == "/" %} class="active"{% elif 'result' in request.path %} class="active"{% endif %}><a href='{% url "compare" %}'>Comparador</a></li>
-            <li {% if 'about' in request.path %} class="active"{% endif %}><a href='{% url "about" %}'>Saiba Mais</a></li>
-            <li {% if 'contactus' in request.path %} class="active"{% endif %}><a href='{% url "contactus" %}'>Contato</a></li>
-          </ul>
-
-          <a href="http://icmc.usp.br/" class="pull-right visible-xl-block">
-            <img alt="logoICMC" src="{% static 'img/logo.png' %}">
-          </a>
-        </div><!--/.nav-collapse -->
-
-      </div>
-    </nav>
+    {% include "cac_app/navbar.html" %}
 
     <!-- Page content -->
     <div class="container">
@@ -74,13 +44,8 @@
       {% endblock %}
     </div>
 
-    <!-- Footer -->  
-    <footer id="footer" class="footer">
-      <div class="container">
-        <p class="text-muted pull-left" style="color: white">© 2017 Instituto de Ciências Matemáticas e de Computação</p>
-        <p class="text-muted pull-right">Website feito por Bruno Rasteiro e Rafael Monteiro</p>
-      </div>
-    </footer>
+    <!-- Footer -->
+    {% include "cac_app/footer.html" %}
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
