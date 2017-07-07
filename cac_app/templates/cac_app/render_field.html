@@ -19,17 +19,33 @@
 {% else %}
 
 	{% if put_row|default_if_none:False or open_row %}<div class="row">{% endif %}
-	<div class="form-group {% if class %}{{class}}{% else %}col-xs-12{% endif %} {% if field.errors %}has-error{% endif %}">
-		{{ field.choice }}
+	<div class="form-group col-xs-12 {% if field.errors %}has-error{% endif %}">
 
-		{{ field.label_tag }}
-		{{ field|addcss:"form-control" }}	
+		<!-- label do form -->
+		<div class="row">
+			<div class="col pull-left">
+			{{ field.label_tag }}
+			</div>
+		</div>
+		<!-- form em si-->
+		<div class="row">
+			<!-- caixa de seleção -->
+			<div class="col-xs-11">
+				{{ field.choice }}
+				{{ field|addcss:"form-control" }}	
+						
+				{% if field.errors %}<div class="alert alert-danger">{% for e in field.errors %}<span>{{e}}</span>{% endfor %}</div>{% endif %}
+			</div>
+			<!-- icone de link p/ site da instituição-->
+			{% if type == "inst" %}
+			<div class="col-xs-1"><a name="grade" href="" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
+			</div>
+			{% endif %}
+		</div>
 
-		{% if field.help_text %} <span class="help-block">{{ field.help_text|safe }}</span> {% endif %}
-		{% if field.errors %}<div class="alert alert-danger">{% for e in field.errors %}<span>{{e}}</span>{% endfor %}</div>{% endif %}
+
+		<!-- {% if field.help_text %} <span class="help-block">{{ field.help_text|safe }}</span> {% endif %} -->
 	</div>
-	{% if type == "inst" %}<a name="grade" href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a><!--<span class="glyphicon glyphicon-link" aria-hidden="true" name="grade"></span>-->{% endif %}
-
 	{% if put_row|default_if_none:False or close_row %}</div>{% endif %}
 
 {% endif %}
