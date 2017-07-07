@@ -1,12 +1,46 @@
 {% load staticfiles %}
 
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="row">
-        <p class="text-muted pull-left" style="color: white">© 2017 Instituto de Ciências Matemáticas e de Computação</p>
-        <p class="text-muted pull-right">Website feito por Bruno Rasteiro e Rafael Monteiro</p>
-      </div>
-    </div>
+<footer id="footer" class="footer">	
+	<div class="container center">
+
+		<!-- imagens -->
+    	<div class="row top-footer">
+
+    		<!-- financiado por -->
+	    	<div class="col-xs-6 pull-left">
+	    		<div class="row center-block"><div class="col">Financiado por:</div></div>
+
+	    		<!-- prceu -->
+	    		<div class="row">
+	    			<div class="col">
+						<a href="http://icmc.usp.br/" target="_blank"><img src="{% static 'img/marca_assinatura_PRCEU_azul_sfundo.png' %}"class="footer-img-prceu img-responsive center-block"></a>
+	    			</div>	    		
+    			</div>
+	    	</div>
+
+	    	<!-- apoio -->
+	    	<div class="col-xs-6 pull-right">
+	    		<div class="row center-block"><div class="col">&nbsp;
+	    		Apoio:</div></div>
+	    		<div class="row">
+
+	    			<!-- nilc -->
+	    			<div class="col-sm-4 col-sm-offset-2">
+	    				<a href="http://nilc.icmc.usp.br/" target="_blank"><img src="{% static 'img/nilc.png' %}" class="footer-img img-responsive center-block"></a>
+	    			</div>
+
+	    			<!-- icmc -->
+	    			<div class="col-sm-4">		
+	    				<a href="http://icmc.usp.br/" target="_blank"><img src="{% static 'img/logo.png' %}" class="footer-img img-responsive center-block"></a>
+	    			</div>
+	    		</div>
+	    	</div>
+
+  		</div>
+
+  		<div class="row bottom-footer">
+  			<div class="col pull-left">© 2017 Instituto de Ciências Matemáticas e de Computação</div>
+  			<div class="col pull-right">Desenvolvido por Bruno Rasteiro e Rafael Monteiro</div>
+  		</div>
   </div>
 </footer>
