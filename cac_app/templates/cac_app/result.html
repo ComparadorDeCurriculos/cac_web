@@ -68,8 +68,25 @@
 	<div class="col-md-8 col-md-offset-2">
 		<div style="text-align: center;">
 			<h2> Discplinas </h2>
-			<li class="list-group-item col-xs-4">Row1</li>
-			
+			<table class="table table-responsive table-hover table-bordered">
+				<thead>
+				    <tr>
+						<th class="text-center">{{credAulaNuc.university1|safe}} - {{credAulaNuc.course1|safe}}</th>
+						<th class="text-center">Equivalentes</th>
+						<th class="text-center">{{credAulaNuc.university2|safe}} - {{credAulaNuc.course2|safe}}</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					{% for setDiscipline in disciplines %}
+					<tr>
+						{% for cel in setDiscipline %}
+						<td class="text-center">{{cel}}</td>
+						{% endfor%}
+					</tr>				
+					{% endfor%}
+				</tbody>
+			</table>
 		</div>
 	</div>
 </ul>
