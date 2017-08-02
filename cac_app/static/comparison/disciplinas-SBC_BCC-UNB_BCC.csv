@@ -1,3 +1,31 @@
-Circuitos Digitais,Probabilidade e Estatística,Administração,Computadores e Sociedade,Comunicação e Expressão,Contabilidade e Custos,Direito e Legislação,Economia,Empreendedorismo,Estágio,Filosofia,Informática na Educação,Inglês,Métodos Quantitativos Aplicados à Administração de Empresas,Sociologia,Psicologia,Circuitos Eletrônicos,Física,Análise de Desempenho,Circuitos Integrados,Computação Gráfica,Automação e Controle,Interação Humano-Computador,Modelagem e Simulação,Processamento Digital de Sinais,Processamento de Imagens,Programação Paralela,Segurança e Auditoria de Sistemas,Sistemas Multimídia,Tolerância a Falhas,Telecomunicações
-LINGUAGENS DE PROGRAMACAO,Organização de Arquivos,Algebra 1,Probabilidade e Estatística,SOFTWARE BASICO,Computação Experimental,INFORMATICA E SOCIEDADE,Trabalho de Graduação 1,Trabalho de Graduação 2,Algoritmos e Programação de Computadores,CALCULO NUMERICO,CIRCUITOS DIGITAIS,INTRODUCAO A INTELIGENCIA ARTIFICIAL,Metodologia Científica,Segurança Computacional,Tecnicas de Programação 1,Tecnicas de Programação 2
-Análise de Algoritmos,Algoritmos e Estruturas de Dados,Arquitetura e Organização de Computadores,Fundamentos de Sistemas,Linguagens de Programação,Organização de Arquivos e Dados,Sistemas Operacionais,Teoria dos Grafos,Álgebra Linear,Análise Combinatória,Cálculo Diferencial e Integral,Equações Diferenciais,Geometria Analítica,Lógica Matemática,Matemática Discreta,Bancos de Dados,Compiladores,Engenharia de Software,Inteligência Artificial,Matemática Computacional,Métodos Formais,Redes de Computadores,Sistemas Digitais,Sistemas Distribuídos,Sistemas Embarcados
+Probabilidade e Estatística,Álgebra Linear,Algebra 1
+Administração,Análise Combinatória,Probabilidade e Estatística
+Computadores e Sociedade,Cálculo Diferencial e Integral,SOFTWARE BASICO
+Comunicação e Expressão,Equações Diferenciais,Computação Experimental
+Contabilidade e Custos,Geometria Analítica,INFORMATICA E SOCIEDADE
+Direito e Legislação,Lógica Matemática,Trabalho de Graduação 1
+Economia,Matemática Discreta,Trabalho de Graduação 2
+Empreendedorismo,Análise de Algoritmos,LINGUAGENS DE PROGRAMACAO
+Estágio,Algoritmos e Estruturas de Dados,Organização de Arquivos
+Filosofia,Arquitetura e Organização de Computadores,Algoritmos e Programação de Computadores
+Informática na Educação,Fundamentos de Sistemas,CALCULO NUMERICO
+Inglês,Linguagens de Programação,CIRCUITOS DIGITAIS
+Métodos Quantitativos Aplicados à Administração de Empresas,Organização de Arquivos e Dados,INTRODUCAO A INTELIGENCIA ARTIFICIAL
+Sociologia,Sistemas Operacionais,Metodologia Científica
+Psicologia,Teoria dos Grafos,Segurança Computacional
+Circuitos Eletrônicos,Bancos de Dados,Tecnicas de Programação 1
+Circuitos Digitais,Compiladores,Tecnicas de Programação 2
+Análise de Desempenho,Engenharia de Software, 
+Circuitos Integrados,Inteligência Artificial, 
+Computação Gráfica,Matemática Computacional, 
+Automação e Controle,Métodos Formais, 
+Interação Humano-Computador,Redes de Computadores, 
+Modelagem e Simulação,Sistemas Digitais, 
+Processamento Digital de Sinais,Sistemas Distribuídos, 
+Processamento de Imagens,Sistemas Embarcados, 
+Programação Paralela, , 
+Segurança e Auditoria de Sistemas, , 
+Sistemas Multimídia, , 
+Tolerância a Falhas, , 
+Telecomunicações, , 
+Física, , 

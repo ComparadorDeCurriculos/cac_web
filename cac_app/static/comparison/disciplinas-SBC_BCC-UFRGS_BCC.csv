@@ -1,3 +1,35 @@
-Fundamentos de Sistemas,Administração,Computadores e Sociedade,Comunicação e Expressão,Contabilidade e Custos,Direito e Legislação,Economia,Estágio,Filosofia,Informática na Educação,Métodos Quantitativos Aplicados à Administração de Empresas,Sociologia,Psicologia,Circuitos Eletrônicos,Física,Automação e Controle,Métodos Formais,Modelagem e Simulação,Processamento Digital de Sinais,Segurança e Auditoria de Sistemas,Telecomunicações
-INTRODUÇÃO À ARQUITETURA DE COMPUTADORES,ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES I,LINGUAGENS FORMAIS E AUTÔMATOS N,FUNDAMENTOS DE ALGORITMOS,CÁLCULO E GEOMETRIA ANALÍTICA II - A,LÓGICA PARA COMPUTAÇÃO,SEMÂNTICA FORMAL N,EMPREENDIMENTO EM INFORMÁTICA,ALGORÍTMOS E PROGRAMAÇÃO - CIC,MODELOS DE LINGUAGEM DE PROGRAMAÇÃO,OTIMIZAÇÃO COMBINATÓRIA
-Análise de Algoritmos,Algoritmos e Estruturas de Dados,Arquitetura e Organização de Computadores,Circuitos Digitais,Linguagens de Programação,Organização de Arquivos e Dados,Sistemas Operacionais,Teoria dos Grafos,Álgebra Linear,Análise Combinatória,Cálculo Diferencial e Integral,Equações Diferenciais,Geometria Analítica,Lógica Matemática,Matemática Discreta,Probabilidade e Estatística,Empreendedorismo,Inglês,Análise de Desempenho,Bancos de Dados,Circuitos Integrados,Compiladores,Computação Gráfica,Engenharia de Software,Inteligência Artificial,Interação Humano-Computador,Matemática Computacional,Processamento de Imagens,Programação Paralela,Redes de Computadores,Sistemas Digitais,Sistemas Distribuídos,Sistemas Embarcados,Sistemas Multimídia,Tolerância a Falhas
+Administração,Álgebra Linear,FUNDAMENTOS DE ALGORITMOS
+Computadores e Sociedade,Análise Combinatória,CÁLCULO E GEOMETRIA ANALÍTICA II - A
+Comunicação e Expressão,Cálculo Diferencial e Integral,LÓGICA PARA COMPUTAÇÃO
+Contabilidade e Custos,Equações Diferenciais,SEMÂNTICA FORMAL N
+Direito e Legislação,Geometria Analítica,EMPREENDIMENTO EM INFORMÁTICA
+Economia,Lógica Matemática,INTRODUÇÃO À ARQUITETURA DE COMPUTADORES
+Estágio,Matemática Discreta,ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES I
+Filosofia,Probabilidade e Estatística,LINGUAGENS FORMAIS E AUTÔMATOS N
+Informática na Educação,Empreendedorismo,ALGORÍTMOS E PROGRAMAÇÃO - CIC
+Métodos Quantitativos Aplicados à Administração de Empresas,Inglês,MODELOS DE LINGUAGEM DE PROGRAMAÇÃO
+Sociologia,Análise de Algoritmos,OTIMIZAÇÃO COMBINATÓRIA
+Psicologia,Algoritmos e Estruturas de Dados, 
+Circuitos Eletrônicos,Arquitetura e Organização de Computadores, 
+Fundamentos de Sistemas,Circuitos Digitais, 
+Automação e Controle,Linguagens de Programação, 
+Métodos Formais,Organização de Arquivos e Dados, 
+Modelagem e Simulação,Sistemas Operacionais, 
+Processamento Digital de Sinais,Teoria dos Grafos, 
+Segurança e Auditoria de Sistemas,Análise de Desempenho, 
+Telecomunicações,Bancos de Dados, 
+Física,Circuitos Integrados, 
+ ,Compiladores, 
+ ,Computação Gráfica, 
+ ,Engenharia de Software, 
+ ,Inteligência Artificial, 
+ ,Interação Humano-Computador, 
+ ,Matemática Computacional, 
+ ,Processamento de Imagens, 
+ ,Programação Paralela, 
+ ,Redes de Computadores, 
+ ,Sistemas Digitais, 
+ ,Sistemas Distribuídos, 
+ ,Sistemas Embarcados, 
+ ,Sistemas Multimídia, 
+ ,Tolerância a Falhas, 

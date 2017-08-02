@@ -1,3 +1,23 @@
-Sistemas Operacionais,Fundamentos de Matemática para a Computação,Introdução à Lógica e Verificação de Programas,Introdução à Probabilidade e à Estatística,Integração na Universidade e na Profissão,Caminhos no Bacharelado em Ciência da Computação,Língua Portuguesa,Laboratório de Métodos Numéricos
-Projetos Digitais e Microprocessadores,Organização e Arquitetura de Computadores,Algoritmos e Estruturas de Dados III,Software Básico,Algoritmos e Teoria dos Grafos,Introdução à Teoria da Computação,Introdução a Teoria Geral da Administração,Teoria de Sistemas,Geometria Analítica I,Cálculo Diferencial e Integral II,Matemática Discreta,Introdução a Álbebra,Oficina de Computação,Sistemas Operacionais,Estatística II,Redes de Computadores I,Introdução à Computação Científica,Engenharia de Requisitos,Redes de Computadores II,Projeto de Software,Inteligência Artificial,Sistemas de Bancos de Dados,Engenharia de Software
-Introdução à Computação,Algoritmos e Estruturas de Dados I,Técnicas de Programação I,Algoritmos e Estruturas de Dados II,Conceitos Fundamentais de Linguagens de Programação,Análise de Algoritmos,Álgebra Booleana e Circuitos Digitais,Cálculo Diferencial e Integral I,Vetores e Geometria,Cálculo Diferencial e Integral II,Álgebra Linear I,Funções Diferenciáveis e Séries,Modelagem e Simulação,Introdução ao Desenvolvimento de Sistemas de Software
+Fundamentos de Matemática para a Computação,Álgebra Booleana e Circuitos Digitais,Geometria Analítica I
+Introdução à Lógica e Verificação de Programas,Cálculo Diferencial e Integral I,Cálculo Diferencial e Integral II
+Introdução à Probabilidade e à Estatística,Vetores e Geometria,Matemática Discreta
+Integração na Universidade e na Profissão,Cálculo Diferencial e Integral II,Introdução a Álbebra
+Caminhos no Bacharelado em Ciência da Computação,Álgebra Linear I,Projetos Digitais e Microprocessadores
+Língua Portuguesa,Funções Diferenciáveis e Séries,Organização e Arquitetura de Computadores
+Sistemas Operacionais,Introdução à Computação,Algoritmos e Estruturas de Dados III
+Laboratório de Métodos Numéricos,Algoritmos e Estruturas de Dados I,Software Básico
+ ,Técnicas de Programação I,Algoritmos e Teoria dos Grafos
+ ,Algoritmos e Estruturas de Dados II,Introdução à Teoria da Computação
+ ,Conceitos Fundamentais de Linguagens de Programação,Introdução a Teoria Geral da Administração
+ ,Análise de Algoritmos,Teoria de Sistemas
+ ,Modelagem e Simulação,Oficina de Computação
+ ,Introdução ao Desenvolvimento de Sistemas de Software,Sistemas Operacionais
+ , ,Estatística II
+ , ,Redes de Computadores I
+ , ,Introdução à Computação Científica
+ , ,Engenharia de Requisitos
+ , ,Redes de Computadores II
+ , ,Projeto de Software
+ , ,Inteligência Artificial
+ , ,Sistemas de Bancos de Dados
+ , ,Engenharia de Software

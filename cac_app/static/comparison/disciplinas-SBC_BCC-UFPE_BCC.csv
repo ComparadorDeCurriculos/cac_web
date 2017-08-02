@@ -1,3 +1,32 @@
-Linguagens de Programação,Teoria dos Grafos,Álgebra Linear,Equações Diferenciais,Geometria Analítica,Lógica Matemática,Probabilidade e Estatística,Administração,Comunicação e Expressão,Contabilidade e Custos,Direito e Legislação,Economia,Empreendedorismo,Estágio,Filosofia,Informática na Educação,Métodos Quantitativos Aplicados à Administração de Empresas,Sociologia,Psicologia,Circuitos Eletrônicos,Física,Análise de Desempenho,Circuitos Integrados,Compiladores,Computação Gráfica,Automação e Controle,Matemática Computacional,Métodos Formais,Processamento Digital de Sinais,Segurança e Auditoria de Sistemas,Tolerância a Falhas,Telecomunicações
-ALGORITMOS E ESTRUTURAS DE DADOS,FISICA PARA COMPUTACAO,PARADIGMAS LING.COMPUTACIONAIS,ESTATIST PROBABILIDADE COMPUTACAO,LOGICA PARA COMPUTACAO,HISTORIA E FUTURO DA COMPUTACAO,METODOL EXPRESSAO TEC-CIENTIFICA,ALGEBRA VET LINEAR P/COMPUTACAO,INTRODUCAO A COMPUTACAO,INTERFACES USUARIO-MAQUINA,INTRODUÇÃO A MULTIMIDIA,PROJETO DE DESENVOLVIMENTO,TEO.IMPLEMEN.LING. COMPUTACIONAIS
-Análise de Algoritmos,Algoritmos e Estruturas de Dados,Arquitetura e Organização de Computadores,Circuitos Digitais,Fundamentos de Sistemas,Organização de Arquivos e Dados,Sistemas Operacionais,Análise Combinatória,Cálculo Diferencial e Integral,Matemática Discreta,Computadores e Sociedade,Inglês,Bancos de Dados,Engenharia de Software,Inteligência Artificial,Interação Humano-Computador,Modelagem e Simulação,Processamento de Imagens,Programação Paralela,Redes de Computadores,Sistemas Digitais,Sistemas Distribuídos,Sistemas Embarcados,Sistemas Multimídia
+Álgebra Linear,Análise Combinatória,ESTATIST PROBABILIDADE COMPUTACAO
+Equações Diferenciais,Cálculo Diferencial e Integral,LOGICA PARA COMPUTACAO
+Geometria Analítica,Matemática Discreta,HISTORIA E FUTURO DA COMPUTACAO
+Lógica Matemática,Computadores e Sociedade,METODOL EXPRESSAO TEC-CIENTIFICA
+Probabilidade e Estatística,Inglês,ALGEBRA VET LINEAR P/COMPUTACAO
+Administração,Análise de Algoritmos,ALGORITMOS E ESTRUTURAS DE DADOS
+Comunicação e Expressão,Algoritmos e Estruturas de Dados,FISICA PARA COMPUTACAO
+Contabilidade e Custos,Arquitetura e Organização de Computadores,PARADIGMAS LING.COMPUTACIONAIS
+Direito e Legislação,Circuitos Digitais,INTRODUCAO A COMPUTACAO
+Economia,Fundamentos de Sistemas,INTERFACES USUARIO-MAQUINA
+Empreendedorismo,Organização de Arquivos e Dados,INTRODUÇÃO A MULTIMIDIA
+Estágio,Sistemas Operacionais,PROJETO DE DESENVOLVIMENTO
+Filosofia,Bancos de Dados,TEO.IMPLEMEN.LING. COMPUTACIONAIS
+Informática na Educação,Engenharia de Software, 
+Métodos Quantitativos Aplicados à Administração de Empresas,Inteligência Artificial, 
+Sociologia,Interação Humano-Computador, 
+Psicologia,Modelagem e Simulação, 
+Circuitos Eletrônicos,Processamento de Imagens, 
+Linguagens de Programação,Programação Paralela, 
+Teoria dos Grafos,Redes de Computadores, 
+Análise de Desempenho,Sistemas Digitais, 
+Circuitos Integrados,Sistemas Distribuídos, 
+Compiladores,Sistemas Embarcados, 
+Computação Gráfica,Sistemas Multimídia, 
+Automação e Controle, , 
+Matemática Computacional, , 
+Métodos Formais, , 
+Processamento Digital de Sinais, , 
+Segurança e Auditoria de Sistemas, , 
+Tolerância a Falhas, , 
+Telecomunicações, , 
+Física, , 
